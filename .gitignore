@@ -1,0 +1,9 @@
+.idea
+.DS_Store
+.venv
+.Rproj.user
+*.Rproj
+renv
+.Rprofile
+.Rhistory
+data
