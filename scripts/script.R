@@ -1,3 +1,5 @@
+library(dplyr)
+
 knowles <- readRDS("data/knowles_matched_TaLG_final.rds")
 uromol <- readRDS("data/UROMOL_TaLG.teachingcohort.rds")
 
