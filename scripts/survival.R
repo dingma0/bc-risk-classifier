@@ -14,7 +14,7 @@ ggsurvplot(
   data = uromol,
   risk.table = TRUE,
   pval = TRUE,
-  conf.int = TRUE,
+  # conf.int = TRUE,
   xlab = "Recurrence-free survival time",
   ylab = "Recurrence-free survival probability",
   legend.title = "Cluster",
@@ -23,7 +23,7 @@ ggsurvplot(
 
 fit_cox <- coxph(surv_obj ~ cluster, data = uromol)
 fit_cox_clin <- coxph(surv_obj ~ cluster + Age + Sex + Smoking + 
-                        Concomitant.CIS + Incident.tumor + Tumor.size + 
+                        Concomitant.CIS + Tumor.size + 
                         BCG + EAU.risk, data = uromol)
 
 
@@ -43,7 +43,7 @@ ggsurvplot(
   data = knowles,
   risk.table = TRUE,
   pval = TRUE,
-  conf.int = TRUE,
+  # conf.int = TRUE,
   xlab = "Recurrence-free survival time",
   ylab = "Recurrence-free survival probability",
   legend.title = "Cluster",
